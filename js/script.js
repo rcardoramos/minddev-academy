@@ -26,27 +26,54 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Accordion script for "Why MindDev"
-const accordionHeaders = document.querySelectorAll('.accordion-header');
+document.addEventListener('DOMContentLoaded', () => {
+    const headers = document.querySelectorAll('.accordion-header');
 
-accordionHeaders.forEach(header => {
-    header.addEventListener('click', () => {
-        const panel = header.nextElementSibling;
-        const arrow = header.querySelector('.accordion-arrow');
-        const wasOpen = header.classList.contains('active');
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            const panel = header.nextElementSibling; // El div con la respuesta
+            const arrow = header.querySelector('.accordion-arrow'); // La flecha SVG
 
-        // Close all other accordions first
-        accordionHeaders.forEach(h => {
-            h.classList.remove('active');
-            h.nextElementSibling.style.maxHeight = null;
-            h.querySelector('.accordion-arrow').classList.remove('rotate-180');
+            // 1. Alternar la clase 'active' en el header
+            header.classList.toggle('active');
+
+            // 2. Manejar la altura del panel (abrir/cerrar)
+            if (panel.style.maxHeight) {
+                // Si está abierto, ciérralo
+                panel.style.maxHeight = null;
+                arrow.classList.remove('rotate-180');
+                arrow.classList.add('text-slate-400');
+                arrow.classList.remove('text-blue-400');
+                header.parentNode.classList.remove('border-blue-600/50', 'shadow-xl'); // Quitar estilo activo del contenedor
+                header.parentNode.classList.add('border-slate-700/50');
+            } else {
+                // Si está cerrado, ábrelo
+                // Cierra primero todos los demás paneles (comportamiento tipo acordeón)
+                document.querySelectorAll('.accordion-panel').forEach(item => {
+                    item.style.maxHeight = null;
+                    item.previousElementSibling.classList.remove('active');
+                    item.previousElementSibling.querySelector('.accordion-arrow').classList.remove('rotate-180');
+                    item.previousElementSibling.querySelector('.accordion-arrow').classList.add('text-slate-400');
+                    item.previousElementSibling.parentNode.classList.remove('border-blue-600/50', 'shadow-xl');
+                    item.previousElementSibling.parentNode.classList.add('border-slate-700/50');
+                });
+
+                // Abrir el panel actual
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                arrow.classList.add('rotate-180');
+                arrow.classList.remove('text-slate-400');
+                arrow.classList.add('text-blue-400');
+                header.parentNode.classList.add('border-blue-600/50', 'shadow-xl'); // Aplicar estilo activo al contenedor
+                header.parentNode.classList.remove('border-slate-700/50');
+            }
         });
-
-        if (!wasOpen) {
-            header.classList.add('active');
-            panel.style.maxHeight = panel.scrollHeight + "px";
-            arrow.classList.add('rotate-180');
-        }
     });
+
+    // Asegurarse de que el primer panel se muestre activo al cargar (opcional)
+    const initialActiveHeader = document.querySelector('.accordion-header.active');
+    if (initialActiveHeader) {
+        initialActiveHeader.click(); // Simula el click para abrirlo
+    }
 });
 
 // Set the third accordion item to be open by default

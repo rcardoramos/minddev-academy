@@ -4,6 +4,20 @@ body {
     /* Dark Navy Blue */
 }
 
+.bg-radial-gradient {
+    background: radial-gradient(circle at center, rgba(10, 25, 47, 1) 0%, rgba(5, 15, 30, 1) 100%);
+}
+
+/* Para el título con degradado */
+.gradient-text-blue {
+    background-image: linear-gradient(to right, #60A5FA, #3B82F6);
+    /* blue-400 a blue-500 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
 .gradient-text {
     background: linear-gradient(to right, #38bdf8, #3b82f6);
     /* Sky-400 to Blue-500 */

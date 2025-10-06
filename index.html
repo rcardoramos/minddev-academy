@@ -4,17 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindDev Academy - Aprende. Crece. Trabaja.</title>
+    <title>MindDev Academy | Cursos de Programación y Empleabilidad Web | Inscríbete Hoy</title>
 
-    <!-- Tailwind CSS -->
+    <meta name="description"
+        content="Aprende programación web Full Stack y prepárate para el mercado laboral. Cursos intensivos, mentores expertos y alta empleabilidad. ¡Transforma tu carrera con MindDev Academy!">
+
+    <meta name="keywords"
+        content="cursos de programación, bootcamp, desarrollo web, full stack, empleabilidad, MindDev Academy, tecnología, aprender a programar">
+
+    <link rel="canonical" href="[URL_COMPLETA_DE_ESTA_PAGINA]">
+    <meta property="og:title" content="MindDev Academy | Cursos de Programación y Empleabilidad Web">
+    <meta property="og:description" content="Aprende programación web Full Stack y prepárate para el mercado laboral.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[URL_COMPLETA_DE_ESTA_PAGINA]">
+    <meta property="og:image" content="[URL_DE_UNA_IMAGEN_DE_ALTA_CALIDAD]">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Icons: Lucide -->
     <script src="https://unpkg.com/lucide-react@0.292.0/dist/lucide-react.js"></script>
 
     <link rel="stylesheet" href="./css/style.css">
@@ -22,20 +31,25 @@
 
 <body class="text-slate-300">
 
-    <header class="bg-[#0A192F]/80 backdrop-blur-md sticky top-0 z-50 shadow-lg shadow-blue-500/5">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold">
+    <header class="sticky top-4 z-50">
+        <nav
+            class="max-w-screen-lg mx-auto px-8 py-3 flex justify-between items-center
+                bg-[#0A192F]/80 backdrop-blur-md rounded-full w-fit shadow-xl shadow-blue-500/10 transition-all duration-300">
+            <a href="#" class="text-xl font-bold mr-4">
                 <span class="gradient-text">MindDev</span><span class="text-slate-300">Academy</span>
             </a>
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="#programas" class="text-slate-300 hover:text-blue-400 transition-colors">Programas</a>
-                <a href="#empleabilidad" class="text-slate-300 hover:text-blue-400 transition-colors">Empleabilidad</a>
-                <a href="#empresas" class="text-slate-300 hover:text-blue-400 transition-colors">Empresas</a>
-                <a href="#testimonios" class="text-slate-300 hover:text-blue-400 transition-colors">Testimonios</a>
+            <div class="hidden md:flex items-center space-x-8"> <a href="#programas"
+                    class="text-sm text-slate-300 hover:text-blue-400 transition-colors">Programas</a>
+                <a href="#empleabilidad"
+                    class="text-sm text-slate-300 hover:text-blue-400 transition-colors">Empleabilidad</a>
+                <a href="#empresas" class="text-sm text-slate-300 hover:text-blue-400 transition-colors">Empresas</a>
+                <a href="#testimonios"
+                    class="text-sm text-slate-300 hover:text-blue-400 transition-colors">Testimonios</a>
                 <a href="#contacto"
-                    class="px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-transform duration-300 hover:scale-105">Inscribirme</a>
+                    class="px-4 py-2 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded-full transition-transform duration-300 hover:scale-105 shadow-md">
+                    Inscribirme </a>
             </div>
-            <button id="mobile-menu-button" class="md:hidden text-white">
+            <button id="mobile-menu-button" class="md:hidden text-white ml-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-menu">
@@ -45,33 +59,60 @@
                 </svg>
             </button>
         </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 flex flex-col space-y-3">
-            <a href="#programas" class="text-slate-300 hover:text-blue-400">Programas</a>
-            <a href="#empleabilidad" class="text-slate-300 hover:text-blue-400">Empleabilidad</a>
-            <a href="#empresas" class="text-slate-300 hover:text-blue-400">Empresas</a>
-            <a href="#testimonios" class="text-slate-300 hover:text-blue-400">Testimonios</a>
+
+        <div id="mobile-menu" class="hidden md:hidden max-w-xs mx-auto mt-2 p-4 flex flex-col space-y-3
+                bg-[#0A192F]/90 backdrop-blur-sm rounded-xl shadow-lg shadow-blue-500/10">
+            <a href="#programas" class="text-slate-300 hover:text-blue-400 text-center">Programas</a>
+            <a href="#empleabilidad" class="text-slate-300 hover:text-blue-400 text-center">Empleabilidad</a>
+            <a href="#empresas" class="text-slate-300 hover:text-blue-400 text-center">Empresas</a>
+            <a href="#testimonios" class="text-slate-300 hover:text-blue-400 text-center">Testimonios</a>
             <a href="#contacto"
-                class="mt-2 text-center w-full px-4 py-2 text-white bg-blue-600 rounded-lg">Inscribirme</a>
+                class="mt-2 text-center w-full px-4 py-2 text-white bg-blue-600 rounded-lg transition-transform duration-300 hover:scale-[1.02]">
+                Inscribirme
+            </a>
         </div>
     </header>
 
     <main>
-        <section class="container mx-auto px-6 py-20 md:py-32 text-center">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight text-white">
-                <span class="gradient-text">Aprende.</span>
-                <span>Crece.</span>
-                <span>Trabaja.</span>
-            </h1>
-            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-8">Transforma tu carrera profesional con
-                nuestros programas intensivos y conecta con las mejores empresas del sector tecnológico.</p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#planes"
-                    class="w-full sm:w-auto px-8 py-3 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg shadow-blue-500/20 transition-transform duration-300 hover:scale-105">Inscríbete
-                    Ahora</a>
-                <a href="#empresas"
-                    class="w-full sm:w-auto px-8 py-3 text-lg font-semibold text-blue-400 bg-transparent border-2 border-blue-500 hover:bg-blue-500/10 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">Soy
-                    Empresa</a>
+        <section id="hero" class="relative py-20 md:py-32 overflow-hidden">
+            <div class="absolute inset-0 z-0 bg-grid-pattern opacity-5"></div>
+
+            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center z-10 relative">
+                <div class="text-center lg:text-left">
+
+                    <p class="text-base text-blue-400 font-medium mb-3 tracking-widest uppercase">
+                        🚀 El Bootcamp que te consigue el trabajo
+                    </p>
+
+                    <h1 class="text-6xl md:text-7xl font-extrabold mb-5 tracking-tight text-white leading-tight">
+                        <span class="gradient-text-blue">Aprende.</span>
+                        <span class="text-slate-200 block md:inline-block">Crece.</span>
+                        <span class="text-slate-200 block md:inline-block">Trabaja.</span>
+                    </h1>
+
+                    <p class="text-xl text-slate-300 max-w-xl lg:max-w-none mx-auto lg:mx-0 mb-10">
+                        Transforma tu carrera profesional con nuestros programas intensivos de Full Stack y **conecta
+                        directamente** con las mejores empresas del sector tecnológico.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row lg:justify-start justify-center items-center gap-4">
+                        <a href="#planes"
+                            class="w-full sm:w-auto px-8 py-4 text-lg font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-lg shadow-2xl shadow-blue-500/30 transition-all duration-300 hover:scale-[1.03]">
+                            Inscríbete Ahora
+                        </a>
+                        <a href="#empresas"
+                            class="w-full sm:w-auto px-8 py-4 text-lg font-semibold text-blue-400 bg-transparent border-2 border-blue-600 hover:bg-blue-600/10 rounded-lg transition-all duration-300 hover:scale-[1.03]">
+                            Soy Empresa
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex justify-center items-center">
+                    <div
+                        class="w-full max-w-md h-72 bg-slate-800/50 border border-slate-700 rounded-xl flex items-center justify-center text-slate-500 text-lg italic">
+                        [Espacio para Ilustración / Código Animado]
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -164,25 +205,33 @@
             </div>
         </section>
 
-        <section id="why-minddev" class="py-20">
-            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-                <!-- Left Content -->
+        <section id="why-minddev" class="py-24 bg-radial-gradient">
+            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
                 <div class="text-center md:text-left">
                     <span
-                        class="inline-block bg-slate-800 text-slate-300 px-3 py-1 rounded-full text-sm font-semibold mb-4">Por
-                        qué MindDev Academy</span>
-                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Conviértete en el talento que buscan las
-                        empresas</h3>
-                    <p class="text-slate-400 max-w-md mx-auto md:mx-0">Diseñamos programas en conjunto con empresas
-                        líderes para que impulses tu futuro.</p>
+                        class="inline-block bg-blue-600/10 text-blue-400 px-4 py-1.5 rounded-full text-sm font-semibold mb-4 border border-blue-600/30 shadow-md shadow-blue-500/10">
+                        Por qué MindDev Academy
+                    </span>
+                    <h3 class="text-4xl lg:text-5xl font-extrabold text-white mb-6">
+                        Conviértete en el <span class="gradient-text-blue">talento que buscan</span> las empresas
+                    </h3>
+                    <p class="text-slate-300 text-lg max-w-lg mx-auto md:mx-0">
+                        Diseñamos programas en conjunto con empresas líderes, garantizando que el temario impulse tu
+                        futuro y se alinee con las necesidades reales del mercado tecnológico.
+                    </p>
+                    <a href="#contacto"
+                        class="mt-8 inline-block px-8 py-3 text-white font-medium bg-blue-600 rounded-full hover:bg-blue-500 transition-colors shadow-lg shadow-blue-500/20">
+                        Quiero Empezar Mi Carrera
+                    </a>
                 </div>
-                <!-- Right Accordion -->
-                <div class="w-full max-w-lg mx-auto">
-                    <div class="border-b border-slate-800">
-                        <button class="accordion-header w-full flex justify-between items-center py-5 text-left">
+
+                <div class="w-full max-w-xl mx-auto space-y-4">
+
+                    <div class="border border-blue-600/50 rounded-xl bg-slate-800/50 shadow-xl shadow-blue-900/10">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left active">
                             <div class="flex items-center">
                                 <div
-                                    class="w-10 h-10 mr-4 flex items-center justify-center border border-slate-700 rounded-full">
+                                    class="w-10 h-10 mr-4 flex items-center justify-center border border-blue-600 rounded-full bg-blue-600/10 text-blue-400">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -190,24 +239,29 @@
                                         <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                                     </svg>
                                 </div>
-                                <span class="font-semibold text-lg text-white">Foco en empleabilidad</span>
+                                <span class="font-bold text-xl text-white">Foco en empleabilidad</span>
                             </div>
-                            <svg class="accordion-arrow w-6 h-6 text-slate-400 transition-transform duration-300"
+                            <svg class="accordion-arrow w-6 h-6 text-blue-400 transform rotate-180 transition-transform duration-300"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="m6 9 6 6 6-6" />
                             </svg>
                         </button>
-                        <div class="accordion-panel overflow-hidden transition-all duration-300" style="max-height: 0;">
-                            <p class="text-slate-400 pb-5 pl-14">Te preparamos para el mercado laboral con entrenamiento
-                                en entrevistas, CV y LinkedIn.</p>
+                        <div class="accordion-panel overflow-hidden transition-all duration-300"
+                            style="max-height: 100px;">
+                            <p class="text-slate-300 pb-5 pt-0 px-5 pl-14">
+                                Te preparamos para el mercado laboral con entrenamiento en entrevistas, CV, optimización
+                                de LinkedIn y acceso a nuestra red de empresas socias.
+                            </p>
                         </div>
                     </div>
-                    <div class="border-b border-slate-800">
-                        <button class="accordion-header w-full flex justify-between items-center py-5 text-left">
+
+                    <div
+                        class="border border-slate-700/50 rounded-xl bg-slate-800/50 hover:border-blue-600/50 transition-colors">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left">
                             <div class="flex items-center">
                                 <div
-                                    class="w-10 h-10 mr-4 flex items-center justify-center border border-slate-700 rounded-full">
+                                    class="w-10 h-10 mr-4 flex items-center justify-center border border-slate-700 rounded-full text-slate-400">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -216,24 +270,28 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <span class="font-semibold text-lg text-white">MindDev Experts</span>
+                                <span class="font-semibold text-xl text-white">MindDev Experts</span>
                             </div>
                             <svg class="accordion-arrow w-6 h-6 text-slate-400 transition-transform duration-300"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="m6 9 6 6 6-6" />
                             </svg>
                         </button>
                         <div class="accordion-panel overflow-hidden transition-all duration-300" style="max-height: 0;">
-                            <p class="text-slate-400 pb-5 pl-14">Aprende de profesionales con años de experiencia en la
-                                industria tecnológica.</p>
+                            <p class="text-slate-300 pb-5 pt-0 px-5 pl-14">
+                                Aprende de profesionales con años de experiencia en la industria tecnológica. Nuestros
+                                instructores son desarrolladores senior que viven y aplican lo que enseñan.
+                            </p>
                         </div>
                     </div>
-                    <div class="border-b border-slate-800">
-                        <button class="accordion-header w-full flex justify-between items-center py-5 text-left">
+
+                    <div
+                        class="border border-slate-700/50 rounded-xl bg-slate-800/50 hover:border-blue-600/50 transition-colors">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left">
                             <div class="flex items-center">
                                 <div
-                                    class="w-10 h-10 mr-4 flex items-center justify-center border border-slate-700 rounded-full">
+                                    class="w-10 h-10 mr-4 flex items-center justify-center border border-slate-700 rounded-full text-slate-400">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -243,101 +301,269 @@
                                         <line x1="3" y1="10" x2="21" y2="10"></line>
                                     </svg>
                                 </div>
-                                <span class="font-semibold text-lg text-white">Aprendizaje aplicado</span>
+                                <span class="font-semibold text-xl text-white">Aprendizaje aplicado</span>
                             </div>
                             <svg class="accordion-arrow w-6 h-6 text-slate-400 transition-transform duration-300"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="m6 9 6 6 6-6" />
                             </svg>
                         </button>
                         <div class="accordion-panel overflow-hidden transition-all duration-300" style="max-height: 0;">
-                            <p class="text-slate-400 pb-5 pl-14">Crea proyectos reales para empresas reales y demuestra
-                                lo que sabes hacer desde el día uno.</p>
+                            <p class="text-slate-300 pb-5 pt-0 px-5 pl-14">
+                                Crea proyectos reales para empresas reales y demuestra lo que sabes hacer desde el día
+                                uno. Finaliza tu programa con un portafolio de impacto.
+                            </p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="quienes-somos" class="bg-slate-900/70 py-20">
-            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-                <div class="order-2 md:order-1">
-                    <h2 class="text-sm font-bold uppercase text-blue-500 mb-2">Quiénes Somos</h2>
-                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Conectamos talento junior con empresas
-                        líderes.</h3>
-                    <p class="text-slate-400 mb-4">MindDev Academy es una academia de formación intensiva diseñada para
-                        cerrar la brecha entre la educación tradicional y las necesidades reales del mercado laboral
-                        tech. Nuestra misión es simple: capacitar a la próxima generación de profesionales y facilitar
-                        su inserción en el mundo laboral.</p>
-                    <p class="text-slate-300 font-semibold">A diferencia de MindDev Perú, que es nuestra consultora de
-                        desarrollo, <span class="gradient-text">MindDev Academy se enfoca 100% en la formación y
-                            empleabilidad</span> de talento emergente.</p>
-                </div>
-                <div class="order-1 md:order-2">
+        <section id="quienes-somos" class="bg-[#0A192F] py-20 lg:py-32 backdrop-blur-sm">
+            <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+
+                <div class="order-1 lg:order-2">
                     <img src="https://placehold.co/600x400/0A192F/3b82f6?text=MindDev+Academy"
-                        alt="Equipo de MindDev Academy" class="rounded-xl shadow-2xl w-full">
+                        alt="Equipo de MindDev Academy, profesionales listos para la enseñanza"
+                        class="rounded-xl w-full object-cover shadow-2xl shadow-blue-900/40 border border-slate-700">
+                </div>
+
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-sm font-bold uppercase text-blue-400 mb-3 tracking-widest">
+                        <span class="inline-block bg-blue-600/10 px-3 py-1 rounded-full">Quiénes Somos</span>
+                    </h2>
+
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+                        Conectamos <span class="gradient-text-blue">talento junior</span> con empresas líderes.
+                    </h3>
+
+                    <p class="text-slate-300 text-lg mb-4">
+                        **MindDev Academy** es una academia de **formación intensiva** diseñada para cerrar la brecha
+                        entre la educación tradicional y las necesidades reales del mercado laboral tech. Nuestra misión
+                        es simple: capacitar a la próxima generación de profesionales y facilitar su inserción en el
+                        mundo laboral.
+                    </p>
+
+                    <p class="text-slate-300 font-semibold mb-8 border-l-4 border-blue-600 pl-4 py-1 italic">
+                        A diferencia de MindDev Perú, nuestra consultora de desarrollo, <span
+                            class="gradient-text">MindDev Academy se enfoca 100% en la formación y empleabilidad</span>
+                        de talento emergente.
+                    </p>
+
+                    <a href="#valores"
+                        class="inline-flex items-center text-blue-400 font-semibold hover:text-blue-300 transition-colors group">
+                        Conoce nuestros valores y filosofía
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="ml-2 transform group-hover:translate-x-1 transition-transform">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="programas" class="py-20">
+        <section id="programas" class="py-24 lg:py-32">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-sm font-bold uppercase text-blue-500 mb-2">Nuestros Programas</h2>
-                <h3 class="text-3xl md:text-4xl font-bold text-white mb-12">Rutas de aprendizaje para tu futuro</h3>
+                <h2 class="text-base font-bold uppercase text-blue-400 mb-2 tracking-widest">
+                    Nuestros Programas
+                </h2>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-16">
+                    Rutas de <span class="gradient-text-blue">aprendizaje</span> para tu futuro
+                </h3>
+
                 <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Card 1 -->
-                    <div
-                        class="bg-slate-900 border border-slate-800 p-8 rounded-xl shadow-lg hover:shadow-blue-500/10 hover:-translate-y-2 transition-all duration-300 text-left">
-                        <h4 class="text-2xl font-bold mb-3 text-white">Programación Web</h4>
-                        <p class="text-slate-400 mb-4">Domina las tecnologías Front-End y Back-End más demandadas. Desde
-                            los fundamentos con HTML, CSS y JS hasta frameworks como React y Node.js.</p>
-                        <a href="#" class="font-semibold text-blue-400 hover:underline">Ver ruta de aprendizaje →</a>
-                    </div>
-                    <!-- Card 2 -->
-                    <div
-                        class="bg-slate-900 border border-slate-800 p-8 rounded-xl shadow-lg hover:shadow-blue-500/10 hover:-translate-y-2 transition-all duration-300 text-left">
-                        <h4 class="text-2xl font-bold mb-3 text-white">Soft Skills & Empleabilidad</h4>
-                        <p class="text-slate-400 mb-4">Aprende a comunicarte eficazmente, trabajar en equipo y destacar
-                            en cualquier proceso de selección. Prepara tu CV, LinkedIn y más.</p>
-                        <a href="#" class="font-semibold text-blue-400 hover:underline">Ver módulos →</a>
-                    </div>
-                    <!-- Card 3 -->
-                    <div
-                        class="bg-slate-900 border border-slate-800 p-8 rounded-xl shadow-lg hover:shadow-blue-500/10 hover:-translate-y-2 transition-all duration-300 text-left">
-                        <h4 class="text-2xl font-bold mb-3 text-white">Cursos de Especialización</h4>
-                        <p class="text-slate-400 mb-4">Profundiza tus conocimientos en áreas específicas como UX/UI
-                            Design, Arquitectura de Software, o frameworks avanzados como Angular y Vue.</p>
-                        <a href="#" class="font-semibold text-blue-400 hover:underline">Explorar cursos →</a>
-                    </div>
+
+                    <a href="#" class="block group bg-[#0C1A30] border border-slate-800 p-8 rounded-xl 
+                       shadow-xl shadow-slate-900/50 hover:shadow-blue-500/10 hover:-translate-y-2 
+                       transition-all duration-300 text-left relative overflow-hidden transform 
+                       hover:border-blue-600/50">
+                        <div
+                            class="w-12 h-12 mb-5 flex items-center justify-center rounded-full bg-blue-600/20 text-blue-400 border border-blue-600/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-code">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+
+                        <h4 class="text-2xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors">
+                            Programación Web Full Stack</h4>
+                        <p class="text-slate-400 mb-6 text-base">
+                            Domina las tecnologías Front-End y Back-End más demandadas. Desde los fundamentos con HTML,
+                            CSS y JS hasta frameworks como **React y Node.js**.
+                        </p>
+                        <span
+                            class="font-semibold text-blue-400 group-hover:text-blue-300 transition-colors inline-flex items-center">
+                            Ver ruta de aprendizaje
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="ml-1 transition-transform group-hover:translate-x-1">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <a href="#" class="block group bg-[#0C1A30] border border-slate-800 p-8 rounded-xl 
+                       shadow-xl shadow-slate-900/50 hover:shadow-blue-500/10 hover:-translate-y-2 
+                       transition-all duration-300 text-left relative overflow-hidden transform 
+                       hover:border-blue-600/50">
+                        <div
+                            class="w-12 h-12 mb-5 flex items-center justify-center rounded-full bg-blue-600/20 text-blue-400 border border-blue-600/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-briefcase">
+                                <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                            </svg>
+                        </div>
+
+                        <h4 class="text-2xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors">Soft
+                            Skills & Empleabilidad</h4>
+                        <p class="text-slate-400 mb-6 text-base">
+                            Aprende a comunicarte eficazmente, trabajar en equipo y destacar en cualquier proceso de
+                            selección. Prepara tu **CV, LinkedIn y portafolio** con impacto.
+                        </p>
+                        <span
+                            class="font-semibold text-blue-400 group-hover:text-blue-300 transition-colors inline-flex items-center">
+                            Ver módulos
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="ml-1 transition-transform group-hover:translate-x-1">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <a href="#" class="block group bg-[#0C1A30] border border-slate-800 p-8 rounded-xl 
+                       shadow-xl shadow-slate-900/50 hover:shadow-blue-500/10 hover:-translate-y-2 
+                       transition-all duration-300 text-left relative overflow-hidden transform 
+                       hover:border-blue-600/50">
+                        <div
+                            class="w-12 h-12 mb-5 flex items-center justify-center rounded-full bg-blue-600/20 text-blue-400 border border-blue-600/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-rocket">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.7-.66 1.13-1.63 1-2C8 10 7 10 7 10" />
+                                <path
+                                    d="M10 16.5c.8-1.4 2.8-2 3.5-3.5 1.2-2.5-1-4.2-3.5-5.5-1.4-.8-2-2.8-3.5-3.5L7 2l2.3 2.3c2.5 2.5 1.5 4.8 2.3 5.5 1.4 1.4 3.5 1.2 5.5 2.3L22 17l-1.5-1.5c-.8-.8-2.5-1.5-3.5-2.3-1.5-1-3.5-.8-4.8-2.3L10 16.5z" />
+                            </svg>
+                        </div>
+
+                        <h4 class="text-2xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors">
+                            Cursos de Especialización</h4>
+                        <p class="text-slate-400 mb-6 text-base">
+                            Profundiza en áreas específicas como **UX/UI Design**, Arquitectura de Software, o
+                            frameworks avanzados para mantenerte a la vanguardia.
+                        </p>
+                        <span
+                            class="font-semibold text-blue-400 group-hover:text-blue-300 transition-colors inline-flex items-center">
+                            Explorar cursos
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="ml-1 transition-transform group-hover:translate-x-1">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </span>
+                    </a>
+
                 </div>
+
                 <a href="#planes"
-                    class="mt-12 inline-block px-8 py-3 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg shadow-blue-500/20 transition-transform duration-300 hover:scale-105">Ver
-                    planes e inscribirme</a>
+                    class="mt-16 inline-block px-10 py-4 text-lg font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-lg shadow-xl shadow-blue-500/30 transition-all duration-300 hover:scale-[1.02]">
+                    Ver Planes de Precios y Financiamiento
+                </a>
             </div>
         </section>
 
-        <section id="empleabilidad" class="bg-slate-900/70 text-white py-20">
+        <section id="empleabilidad" class="bg-[#0A192F] text-white py-24 lg:py-32">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-sm font-bold uppercase text-blue-400 mb-2">Entrenamiento Exclusivo</h2>
-                <h3 class="text-3xl md:text-4xl font-bold mb-12">Prepárate para conseguir el trabajo que quieres</h3>
+                <h2 class="text-base font-bold uppercase text-blue-400 mb-3 tracking-widest">
+                    <span class="inline-block bg-blue-600/10 px-3 py-1 rounded-full border border-blue-600/30">
+                        Entrenamiento Exclusivo
+                    </span>
+                </h2>
+
+                <h3 class="text-4xl md:text-5xl font-extrabold mb-16">
+                    Prepárate para conseguir el <span class="gradient-text-blue">trabajo que quieres</span>
+                </h3>
+
                 <div class="grid md:grid-cols-3 gap-8 text-left">
-                    <div class="bg-slate-800/80 p-6 rounded-lg border border-slate-700">
-                        <h4 class="text-xl font-bold mb-2">CV Tech-Friendly</h4>
-                        <p class="text-slate-400">Te ayudamos a crear un CV que no solo pase los filtros automáticos
-                            (ATS), sino que también impresione a los reclutadores.</p>
+
+                    <div
+                        class="bg-[#0C1A30] p-8 rounded-xl border border-slate-700 hover:border-blue-600/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-12 h-12 mb-4 flex items-center justify-center rounded-full bg-blue-600/20 text-blue-400 border border-blue-600/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-file-text">
+                                <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                                <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                                <path d="M10 9H8" />
+                                <path d="M16 13H8" />
+                                <path d="M16 17H8" />
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 text-white">CV Tech-Friendly</h4>
+                        <p class="text-slate-400 text-base">
+                            Te ayudamos a crear un **CV que no solo pase los filtros automáticos (ATS)**, sino que
+                            también impresione a los reclutadores en el sector tecnológico.
+                        </p>
                     </div>
-                    <div class="bg-slate-800/80 p-6 rounded-lg border border-slate-700">
-                        <h4 class="text-xl font-bold mb-2">Optimización de LinkedIn</h4>
-                        <p class="text-slate-400">Transformamos tu perfil en un imán para oportunidades laborales,
-                            destacando tus proyectos y habilidades clave.</p>
+
+                    <div
+                        class="bg-[#0C1A30] p-8 rounded-xl border border-slate-700 hover:border-blue-600/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-12 h-12 mb-4 flex items-center justify-center rounded-full bg-blue-600/20 text-blue-400 border border-blue-600/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-linkedin">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 text-white">Optimización de LinkedIn</h4>
+                        <p class="text-slate-400 text-base">
+                            Transformamos tu perfil en un **imán para oportunidades laborales**, destacando tus
+                            proyectos, habilidades clave y experiencia en el formato que los *headhunters* buscan.
+                        </p>
                     </div>
-                    <div class="bg-slate-800/80 p-6 rounded-lg border border-slate-700">
-                        <h4 class="text-xl font-bold mb-2">Simulacros de Entrevistas</h4>
-                        <p class="text-slate-400">Practica entrevistas técnicas y de comportamiento con profesionales
-                            del sector y recibe feedback real para mejorar.</p>
+
+                    <div
+                        class="bg-[#0C1A30] p-8 rounded-xl border border-slate-700 hover:border-blue-600/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div
+                            class="w-12 h-12 mb-4 flex items-center justify-center rounded-full bg-blue-600/20 text-blue-400 border border-blue-600/50">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-message-circle-code">
+                                <path
+                                    d="M7.9 20A10 10 0 0 0 16 15h3a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1" />
+                                <path d="m10 10-2 2 2 2" />
+                                <path d="m14 14 2-2-2-2" />
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-3 text-white">Simulacros de Entrevistas</h4>
+                        <p class="text-slate-400 text-base">
+                            Practica entrevistas **técnicas y de comportamiento** con profesionales del sector y recibe
+                            *feedback* real y personalizado para asegurar tu éxito.
+                        </p>
                     </div>
+
                 </div>
+
+                <a href="#contacto"
+                    class="mt-16 inline-block px-10 py-4 text-lg font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-lg shadow-xl shadow-blue-500/30 transition-all duration-300 hover:scale-[1.02]">
+                    Empieza tu entrenamiento de empleabilidad
+                </a>
             </div>
         </section>
 
@@ -750,64 +976,122 @@
         </section>
     </main>
 
+    <footer class="bg-[#0A192F] text-slate-400 relative">
+        <a href="#hero" id="back-to-top" aria-label="Volver al inicio de la página" class="absolute top-0 right-1/2 translate-x-1/2 -mt-6 
+              bg-blue-600 p-3 rounded-full shadow-lg hover:bg-blue-500 
+              transition-all duration-300 hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="white"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up">
+                <path d="m18 15-6-6-6 6" />
+            </svg>
+        </a>
 
-    <footer class="bg-slate-900 text-slate-400">
-        <div class="container mx-auto px-6 py-12">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold text-white mb-4">
+        <div class="container mx-auto px-6 py-16 sm:py-20">
+            <div class="grid md:grid-cols-5 gap-12 lg:gap-16">
+
+                <div class="md:col-span-2">
+                    <h3 class="text-3xl font-extrabold text-white mb-4">
                         <span class="gradient-text">MindDev</span><span class="text-slate-300">Academy</span>
                     </h3>
-                    <p class="text-sm">Formando a la nueva generación de talento tecnológico.</p>
+                    <p class="text-base text-slate-300">Formando a la nueva generación de talento tecnológico con
+                        bootcamps intensivos y enfoque en la empleabilidad.</p>
+                    <p class="mt-4 text-sm">
+                        <a href="mailto:info@minddevacademy.com"
+                            class="hover:text-blue-400 transition-colors">info@minddevacademy.com</a>
+                    </p>
                 </div>
+
                 <div>
-                    <h4 class="font-semibold text-white mb-4">MindDev</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white">MindDev Perú</a></li>
-                        <li><a href="#quienes-somos" class="hover:text-white">Sobre la Academy</a></li>
-                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                    <h4 class="font-bold text-white mb-5 border-b border-blue-600/50 pb-2">MindDev</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">MindDev Perú</a></li>
+                        <li><a href="#quienes-somos" class="hover:text-blue-400 transition-colors">Sobre la Academy</a>
+                        </li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Blog de Tecnología</a></li>
+                        <li><a href="#contacto" class="hover:text-blue-400 transition-colors">Trabaja con Nosotros</a>
+                        </li>
                     </ul>
                 </div>
+
                 <div>
-                    <h4 class="font-semibold text-white mb-4">Recursos</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#programas" class="hover:text-white">Programas</a></li>
-                        <li><a href="#empresas" class="hover:text-white">Bolsa de Trabajo</a></li>
-                        <li><a href="#planes" class="hover:text-white">Planes</a></li>
+                    <h4 class="font-bold text-white mb-5 border-b border-blue-600/50 pb-2">Recursos</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#programas" class="hover:text-blue-400 transition-colors">Nuestros Programas</a>
+                        </li>
+                        <li><a href="#empresas" class="hover:text-blue-400 transition-colors">Bolsa de Trabajo</a></li>
+                        <li><a href="#planes" class="hover:text-blue-400 transition-colors">Planes de Pago</a></li>
+                        <li><a href="#testimonios" class="hover:text-blue-400 transition-colors">Testimonios</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h4 class="font-semibold text-white mb-4">Síguenos</h4>
+                    <h4 class="font-bold text-white mb-5 border-b border-blue-600/50 pb-2">Síguenos</h4>
                     <div class="flex space-x-4">
-                        <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 hover:text-white">
+
+                        <a href="#" aria-label="LinkedIn" class="text-slate-400 hover:text-blue-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="w-6 h-6">
                                 <path
                                     d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                                 <rect width="4" height="12" x="2" y="9" />
                                 <circle cx="4" cy="4" r="2" />
-                            </svg></a>
-                        <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 hover:text-white">
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="X (Twitter)" class="text-slate-400 hover:text-white transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-6 h-6">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.5 3 7c2.2 2.7 5 4.5 9 5.2-1.3-3.2 4.4-6 5.5-3.5a1.8 1.8 0 0 0 3.3-1.3c-.6.3-2.1.8-3 1.2" />
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="Facebook" class="text-slate-400 hover:text-blue-500 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-6 h-6">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                            </svg></a>
-                        <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 hover:text-white">
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="Instagram" class="text-slate-400 hover:text-pink-500 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-6 h-6">
                                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                            </svg></a>
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="TikTok" class="text-slate-400 hover:text-red-500 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-6 h-6">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="10 8 16 12 10 16 10 8" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="mt-12 pt-8 border-t border-slate-800 text-sm text-center">
-                <p>&copy; 2024 MindDev Academy. Todos los derechos reservados.</p>
+
+            <div class="mt-16 pt-8 border-t border-slate-700 text-sm text-center">
+                <p class="mb-1">&copy; 2024 MindDev Academy. Todos los derechos reservados.</p>
+                <p>Desarrollado con 💙 por
+                    <a href="https://minddevperu.com/" target="_blank"
+                        class="text-blue-400 hover:text-blue-300 font-medium transition-colors">
+                        MindDev Perú
+                    </a>
+                </p>
             </div>
         </div>
     </footer>
+
     <script src="./js/script.js"></script>
+
 </body>
 
 </html>
