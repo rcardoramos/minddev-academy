@@ -32,9 +32,11 @@
 <body class="text-slate-300">
 
     <header class="sticky top-6 z-50 transition-all duration-500">
-        <nav
-            class="max-w-screen-xl mx-auto px-14 py-5 flex justify-between items-center bg-[#1A1F2E]/60 backdrop-blur-2xl rounded-full w-fit border border-white/10 shadow-xl shadow-blue-500/10 hover:bg-[#1A1F2E]/80 hover:shadow-blue-500/20 transition-all duration-500">
-            <!-- Logo -->
+        <nav class="max-w-screen-xl mx-auto px-14 py-5 flex justify-between items-center
+      bg-[#1A1F2E]/60 backdrop-blur-2xl rounded-full w-fit
+      border border-white/10 shadow-xl shadow-blue-500/10
+      hover:bg-[#1A1F2E]/80 hover:shadow-blue-500/20 transition-all duration-500">
+
             <a href="#" class="text-2xl font-semibold tracking-tight mr-6 flex items-center gap-1 group">
                 <span
                     class="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 bg-clip-text text-transparent">MindDev</span>
@@ -98,7 +100,6 @@
         </div>
     </header>
 
-
     <main>
         <section id="hero" class="relative py-20 md:py-32 overflow-hidden">
             <div class="absolute inset-0 z-0 bg-grid-pattern opacity-5"></div>
@@ -117,8 +118,8 @@
                     </h1>
 
                     <p class="text-xl text-slate-300 max-w-xl lg:max-w-none mx-auto lg:mx-0 mb-10">
-                        Transforma tu carrera profesional con nuestros programas intensivos de Full Stack y **conecta
-                        directamente** con las mejores empresas del sector tecnológico.
+                        Transforma tu carrera profesional con nuestros programas intensivos de Full Stack y conecta
+                        directamente con las mejores empresas del sector tecnológico.
                     </p>
 
                     <div class="flex flex-col sm:flex-row lg:justify-start justify-center items-center gap-4">
@@ -134,10 +135,7 @@
                 </div>
 
                 <div class="hidden lg:flex justify-center items-center">
-                    <div
-                        class="w-full max-w-md h-72 bg-slate-800/50 border border-slate-700 rounded-xl flex items-center justify-center text-slate-500 text-lg italic">
-                        [Espacio para Ilustración / Código Animado]
-                    </div>
+                    <img src="./assets/hero.png" alt="Logo minddevacademy laptop">
                 </div>
             </div>
         </section>
@@ -251,77 +249,95 @@
                     </a>
                 </div>
 
-                <div class="w-full max-w-xl mx-auto space-y-6">
+                <div class="w-full max-w-xl mx-auto space-y-4">
 
-                    <div
-                        class="p-6 border border-blue-600/50 rounded-xl bg-slate-800/50 shadow-2xl shadow-blue-900/10 transform transition duration-300 hover:scale-[1.02]">
-                        <div class="flex items-start">
-                            <div
-                                class="w-12 h-12 mr-4 mt-1 flex items-center justify-center border border-blue-600 rounded-lg bg-blue-600/10 text-blue-400 flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                </svg>
+                    <div class="border border-blue-600/50 rounded-xl bg-slate-800/50 shadow-xl shadow-blue-900/10">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left active">
+                            <div class="flex items-center">
+                                <div
+                                    class="w-10 h-10 mr-4 flex items-center justify-center border border-blue-600 rounded-full bg-blue-600/10 text-blue-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                    </svg>
+                                </div>
+                                <span class="font-bold text-xl text-white">Foco en empleabilidad</span>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-xl text-white mb-2">Foco en empleabilidad</h4>
-                                <p class="text-slate-300 text-base">
-                                    Te preparamos para el mercado laboral con entrenamiento en entrevistas, CV,
-                                    optimización
-                                    de LinkedIn y acceso a nuestra red de empresas socias.
-                                </p>
-                            </div>
+                            <svg class="accordion-arrow w-6 h-6 text-blue-400 transform rotate-180 transition-transform duration-300"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-panel overflow-hidden transition-all duration-300"
+                            style="max-height: 100px;">
+                            <p class="text-slate-300 pb-5 pt-0 px-5 pl-14">
+                                Te preparamos para el mercado laboral con entrenamiento en entrevistas, CV, optimización
+                                de LinkedIn y acceso a nuestra red de empresas socias.
+                            </p>
                         </div>
                     </div>
 
                     <div
-                        class="p-6 border border-slate-700/50 rounded-xl bg-slate-800/50 hover:border-blue-600/50 transition-colors shadow-lg transform transition duration-300 hover:scale-[1.02]">
-                        <div class="flex items-start">
-                            <div
-                                class="w-12 h-12 mr-4 mt-1 flex items-center justify-center border border-slate-700 rounded-lg text-slate-400 flex-shrink-0 bg-slate-700/10 hover:border-blue-600 hover:bg-blue-600/10 hover:text-blue-400 transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="m15.232 5.232 3.536 3.536m-2.036-5.036a2.5 2.5 0 1 1 3.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
-                                    </path>
-                                </svg>
+                        class="border border-slate-700/50 rounded-xl bg-slate-800/50 hover:border-blue-600/50 transition-colors">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left">
+                            <div class="flex items-center">
+                                <div
+                                    class="w-10 h-10 mr-4 flex items-center justify-center border border-slate-700 rounded-full text-slate-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="m15.232 5.232 3.536 3.536m-2.036-5.036a2.5 2.5 0 1 1 3.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span class="font-semibold text-xl text-white">MindDev Experts</span>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-xl text-white mb-2">MindDev Experts</h4>
-                                <p class="text-slate-300 text-base">
-                                    Aprende de profesionales con años de experiencia en la industria tecnológica.
-                                    Nuestros
-                                    instructores son desarrolladores senior que viven y aplican lo que enseñan.
-                                </p>
-                            </div>
+                            <svg class="accordion-arrow w-6 h-6 text-slate-400 transition-transform duration-300"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-panel overflow-hidden transition-all duration-300" style="max-height: 0;">
+                            <p class="text-slate-300 pb-5 pt-0 px-5 pl-14">
+                                Aprende de profesionales con años de experiencia en la industria tecnológica. Nuestros
+                                instructores son desarrolladores senior que viven y aplican lo que enseñan.
+                            </p>
                         </div>
                     </div>
 
                     <div
-                        class="p-6 border border-slate-700/50 rounded-xl bg-slate-800/50 hover:border-blue-600/50 transition-colors shadow-lg transform transition duration-300 hover:scale-[1.02]">
-                        <div class="flex items-start">
-                            <div
-                                class="w-12 h-12 mr-4 mt-1 flex items-center justify-center border border-slate-700 rounded-lg text-slate-400 flex-shrink-0 bg-slate-700/10 hover:border-blue-600 hover:bg-blue-600/10 hover:text-blue-400 transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg>
+                        class="border border-slate-700/50 rounded-xl bg-slate-800/50 hover:border-blue-600/50 transition-colors">
+                        <button class="accordion-header w-full flex justify-between items-center p-5 text-left">
+                            <div class="flex items-center">
+                                <div
+                                    class="w-10 h-10 mr-4 flex items-center justify-center border border-slate-700 rounded-full text-slate-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                </div>
+                                <span class="font-semibold text-xl text-white">Aprendizaje aplicado</span>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-xl text-white mb-2">Aprendizaje aplicado</h4>
-                                <p class="text-slate-300 text-base">
-                                    Crea proyectos reales para empresas reales y demuestra lo que sabes hacer desde el
-                                    día
-                                    uno. Finaliza tu programa con un portafolio de impacto.
-                                </p>
-                            </div>
+                            <svg class="accordion-arrow w-6 h-6 text-slate-400 transition-transform duration-300"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="accordion-panel overflow-hidden transition-all duration-300" style="max-height: 0;">
+                            <p class="text-slate-300 pb-5 pt-0 px-5 pl-14">
+                                Crea proyectos reales para empresas reales y demuestra lo que sabes hacer desde el día
+                                uno. Finaliza tu programa con un portafolio de impacto.
+                            </p>
                         </div>
                     </div>
 
@@ -333,9 +349,8 @@
             <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
 
                 <div class="order-1 lg:order-2">
-                    <img src="https://placehold.co/600x400/0A192F/3b82f6?text=MindDev+Academy"
-                        alt="Equipo de MindDev Academy, profesionales listos para la enseñanza"
-                        class="rounded-xl w-full object-cover shadow-2xl shadow-blue-900/40 border border-slate-700">
+                    <img src="./assets/why-minddev.png"
+                        alt="Equipo de MindDev Academy, profesionales listos para la enseñanza">
                 </div>
 
                 <div class="order-2 lg:order-1">
