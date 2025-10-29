@@ -25,17 +25,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Set the third accordion item to be open by default
-document.addEventListener('DOMContentLoaded', () => {
-    const thirdHeader = accordionHeaders[2];
-    if (thirdHeader) {
-        thirdHeader.classList.add('active');
-        const panel = thirdHeader.nextElementSibling;
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        thirdHeader.querySelector('.accordion-arrow').classList.add('rotate-180');
-    }
-});
-
 // Tab script for "Planes y Precios"
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabPanels = document.querySelectorAll('.tab-panel');
